@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bilangan Bulat Kelas 7</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background: linear-gradient(90deg, #ecd76b, #f8d529);
+            padding: 1rem 0;
+            width: 100%;
+            color: white;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 1rem;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+
+        .nav-links {
+            list-style: none;
+            display: flex;
+            gap: 1rem;
+        }
+
+        .nav-links li {
+            position: relative;
+        }
+
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+            font-size: 1rem;
+            transition: color 0.3s;
+        }
+
+        .nav-links a:hover {
+            color: #ffdd57;
+        }
+
+        .burger {
+            display: none;
+            cursor: pointer;
+            flex-direction: column;
+            gap: 0.3rem;
+        }
+
+        .burger div {
+            width: 25px;
+            height: 3px;
+            background: white;
+            transition: all 0.3s;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 2rem auto;
+            padding: 0 1rem;
+        }
+
+        .home {
+            text-align: center;
+            padding: 2rem 0;
+        }
+
+        .home h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .home p {
+            font-size: 1.2rem;
+            line-height: 1.6;
+        }
+
+        footer {
+            background: #f8d529;
+            color: hsl(0, 0%, 100%); /* Warna teks putih */
+            text-align: center; /* Teks di tengah */
+            padding: 1rem 0;
+            position: relative;
+            width: 100%;
+            bottom: 0;
+        }
+        footer {
+            display: flex;
+            color: rgb(255, 255, 255); /* Warna teks putih */
+            justify-content: center;
+            align-items: center;
+        }
+
+        footer p {
+            margin: 0;
+            letter-spacing: 0.5px;
+            font-weight: 400;
+        }
+        footer p {
+            color: white !important;
+        }
+        .background-image {
+            width: 40%;
+            height: auto;
+            margin-top: 30px;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        @media (max-width: 768px) {
+            .nav-links {
+                display: none;
+                flex-direction: column;
+                background: #4a90e2;
+                position: absolute;
+                top: 60px;
+                right: 0;
+                width: 100%;
+            }
+
+            .nav-links.active {
+                display: flex;
+            }
+
+            .burger {
+                display: flex;
+            }
+
+            .burger.toggle .line1 {
+                transform: rotate(-45deg) translate(-5px, 6px);
+            }
+
+            .burger.toggle .line2 {
+                opacity: 0;
+            }
+
+            .burger.toggle .line3 {
+                transform: rotate(45deg) translate(-5px, -6px);
+            }
+        }
+
+        /* Gaya tambahan untuk bagian materi peluang */
+        .content-container {
+            max-width: 800px;
+            margin: 30px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+        }
+
+        h1, h2 {
+            text-align: center;
+            color: #ed5f07;
+            margin-bottom: 20px;
+        }
+
+        p, ul {
+            margin-bottom: 20px;
+            line-height: 1.6;
+            text-align: justify;
+            color: #333;
+        }
+
+        ul {
+            margin-left: 20px;
+        }
+
+        .formula {
+            background-color: #f4f4f4;
+            padding: 10px;
+            border-radius: 5px;
+            font-weight: bold;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        img {
+            display: block;
+            margin: 0 auto;
+            width: 200px;
+        }
+
+        .question {
+            font-weight: bold;
+            margin-top: 20px;
+        }
+
+        .solution {
+            background-color: #f4f4f4;
+            padding: 10px;
+            border-radius: 5px;
+            margin-bottom: 20px;
+        }
+    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">Bilangan Bulat Kelas 7</div>
+            <ul class="nav-links">
+                <li><a href="home.html"><i class="fas fa-home"></i> Beranda</a></li>
+                <li><a href="materi1.html"><i class="fas fa-book"></i> Materi</a></li>
+                <li><a href="kuis1.html"><i class="fas fa-question-circle"></i> Kuis</a></li>
+                <li><a href="kontak1.html"><i class="fas fa-envelope"></i> Kontak</a></li>
+            </ul>
+            <div class="burger">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+        </nav>
+    </header>
+
+    <!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kuis Peluang Kelas 8</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
+            margin: 0;
+            padding: 0;
+        }
+
+        .quiz-container {
+            max-width: 800px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            text-align: center;
+            color: #ed5f07;
+        }
+
+        .form-container {
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 10px;
+            font-weight: bold;
+            color: #333;
+        }
+
+        input[type="text"] {
+            padding: 10px;
+            width: 80%;
+            max-width: 300px;
+            margin: 10px auto;
+            display: block;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            transition: border-color 0.3s;
+        }
+
+        input[type="text"]:focus {
+            border-color: #ed5f07;
+            outline: none;
+        }
+
+        button {
+            background-color: #ed5f07;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            margin: 10px;
+            transition: background-color 0.3s;
+        }
+
+        button:hover {
+            background-color: #ed5f07;
+        }
+
+        button:disabled {
+            background-color: #ccc;
+            cursor: not-allowed;
+        }
+
+        .question-container {
+            margin-bottom: 20px;
+        }
+
+        #resultContainer {
+            margin-top: 30px;
+            display: none;
+        }
+    </style>
+</head>
+<body>
+
+<div class="quiz-container">
+    <h1>Kuis Bilangan Bulat</h1>
+    <div class="form-container" id="formContainer">
+        <label for="name">Nama:</label>
+        <input type="text" id="name" placeholder="Masukkan nama" required>
+        <label for="class">Kelas:</label>
+        <input type="text" id="class" placeholder="Masukkan kelas" required>
+        <button id="startButton">Mulai Kuis</button>
+    </div>
+
+    <div id="quizContent" style="display:none;">
+        <div class="question-container" id="questionContainer">
+            <!-- Pertanyaan akan dimuat di sini -->
+        </div>
+
+        <div class="button-container">
+            <button id="prevButton" disabled>Previous</button>
+            <button id="nextButton" disabled>Next</button>
+            <button id="submitButton" disabled>Submit</button>
+        </div>
+    </div>
+
+    <div id="resultContainer"></div>
+</div>
+
+<script>
+    const questions = [
+        {
+            question: "Pernyataan berikut ini yang memiliki bilangan bulat negatif, kecuali...",
+            options: ["Suhu udara di Bromo 3 derajat di bawah nol", "Hiu menyelam di kedalaman 13 meter di bawah permukaan air laut", "Betari melangkah mundur 4 langkah", "Suhu badan Sankara saat ini 40 derajat celcius"],
+            answer: "Suhu badan Sankara saat ini 40 derajat celcius",
+            explanation: "Suhu 40 derajat celcius merupakan bilangan yang bernilai positif"
+        },
+        {
+            question: "Berikut yang bukan termasuk bilangan bulat positif adalah...",
+            options:["4", "0", "100", "2024"],
+            answer: "0",
+            explanation: "0 bukan termasuk bilangan bulat positif."
+        },
+        {
+            question:"Bilangan bulat yang terletak antara 10 dan -1...",
+            options: ["1.5","1/2","10%","1"],
+            answer:"1",
+            explanation: "1.5,1/2, dan 10% bukanlah bilangan bulat melainkan bilangan pecahan dan persen. Yang merupakan bilangan bulat adalah 1"
+
+        },
+        {
+            question:"Berikut ini bilangan yang lebih kecil dari -170 adalah...",
+            options:["-172","-120", "-168", "-167"],
+            answer: "-172",
+            eksplanation: "Pada bilangan bulat negatif, semakin besar bilangannya, semakin kecil nilainya. Maka bilangan bulat kurang dari -170 adalah -172."
+        },
+        {
+            question: "yang bukan termasuk bilangan bulat negatif adalah...",
+            options:["-100", "-2024", "-1", "0"],
+            answer: "0",
+            eksplanation: "Nol bukan biangan bulat negatif"
+        },
+        {
+            question: "yang termasuk bilangan bulat positif adalah...",
+            options: ["96", "-364", "-109000", "-96"],
+            answer: "96",
+            eksplanation: "96 adalah bilangan bulat positif"
+        },
+        {
+            question: "Pernyataan berikut ini yang tepat apabila diberi tanda pembanding berupa > adalah...",
+            options: ["-800...-79", "-9000...900", "-189...-200", "-50...-5"],
+            answer: "-189...-200",
+            eksplanation: "Karena -189 lebih besar dari -200. Apabila diberi tanda pembanding maka -189 > -200."
+        },
+        {
+            question:"Urutan bilangan di bawah ini yang paling tepat jika diurutkan dari yang paling besar ke paling kecil adalah...",
+            options: ["-189,-190,-200,-1000", "91,-9,100,0","0,1,2,2", "100,101,107,108"],
+            answer: "-189,-190,-200,-1000",
+            eksplanation: "-1000 merupakan nilai terkecil dari daftar bilangan pada soal, -200 lebih besar dari -1000, -190 lebih besar dari -200, -189 lebih besar dari -190. Jadi jawaban yang benar adalah -189,-190,-200,-1000"
+        },
+        {
+            question: "bilangan di bawah ini yang paling tepat jika diurutkan dari yang paling kecil ke paling besar adalah...",
+            options: ["-15,-13,-11,-9","-9,-11,-13,-15","15,13,11,9","4,3,2,1"],
+            answer: "-15,-13,-11,-9",
+            eksplanation: "-15 merupakan nilai terkecil dari daftar bilangan pada soal, semakin ke kiri nilainya semakin besar. Jadi jawaban yang benar adalah -15,-13,-11,-9 "
+        },
+        {
+            question: "berikut ini yang tepat apabila diberi tanda pembanding berupa < adalah...",
+            options: ["5...4", "-10...-14", "-189...-200", "-2024...-24"],
+            answer:"-2024...-24",
+            eksplanation: "Pada garis bilangan -2024 terletak di sebelah kiri angka -24. Pada bilangan bulat negatif semakin besar bilangannya maka semakin kecil nilainya. Sehingga -2004 < -24"
+        }
+    ];
+
+    let currentQuestionIndex = 0;
+    let answers = [];
+
+    function displayQuestion(index) {
+        const questionContainer = document.getElementById('questionContainer');
+        const questionData = questions[index];
+        questionContainer.innerHTML = `
+            <h3>Soal ${index + 1}: ${questionData.question}</h3>
+            ${questionData.options.map((option) => `
+                <label><input type="radio" name="question${index}" value="${option}"> ${option}</label>
+            `).join('')}
+        `;
+        
+        // Pastikan jawaban yang sebelumnya dipilih tetap ditampilkan
+        const selectedAnswer = answers[index];
+        if (selectedAnswer) {
+            document.querySelector(`input[name="question${index}"][value="${selectedAnswer}"]`).checked = true;
+        }
+    }
+
+    function initQuiz() {
+        const name = document.getElementById('name').value;
+        const studentClass = document.getElementById('class').value;
+
+        if (name === '' || studentClass === '') {
+            alert('Nama dan kelas harus diisi!');
+            return;
+        }
+
+        document.getElementById('formContainer').style.display = 'none';
+        document.getElementById('nextButton').disabled = false;
+        displayQuestion(currentQuestionIndex);
+        document.getElementById('quizContent').style.display = 'block';
+    }
+
+    function nextQuestion() {
+        const selectedOption = document.querySelector(`input[name="question${currentQuestionIndex}"]:checked`);
+        if (selectedOption) {
+            answers[currentQuestionIndex] = selectedOption.value;
+        }
+
+        if (currentQuestionIndex < questions.length - 1) {
+            currentQuestionIndex++;
+            displayQuestion(currentQuestionIndex);
+            document.getElementById('prevButton').disabled = false;
+        }
+
+        if (currentQuestionIndex === questions.length - 1) {
+            document.getElementById('nextButton').disabled = true;
+            document.getElementById('submitButton').disabled = false;
+        }
+    }
+
+    function prevQuestion() {
+        if (currentQuestionIndex > 0) {
+            currentQuestionIndex--;
+            displayQuestion(currentQuestionIndex);
+            document.getElementById('nextButton').disabled = false;
+        }
+
+        if (currentQuestionIndex === 0) {
+            document.getElementById('prevButton').disabled = true;
+        }
+    }
+
+    function submitQuiz() {
+        const resultContainer = document.getElementById('resultContainer');
+        resultContainer.innerHTML = '';
+
+        let correctAnswers = 0;
+        answers.forEach((answer, index) => {
+            const questionData = questions[index];
+            const isCorrect = answer === questionData.answer;
+            if (isCorrect) correctAnswers++;
+        });
+
+        const score = Math.round((correctAnswers / questions.length) * 100);
+        resultContainer.innerHTML += `<strong>Skor Anda: ${score}/100</strong><br><br>`;
+
+        questions.forEach((question, index) => {
+            const answer = answers[index] || 'Tidak dijawab';
+            const isCorrect = answer === question.answer;
+            resultContainer.innerHTML += `
+                <div>
+                    <strong>Soal ${index + 1}: ${question.question}</strong><br>
+                    Jawaban Anda: ${answer} ${answer === 'Tidak dijawab' ? '' : (isCorrect ? '(Benar)' : '(Salah)')}<br>
+                    Penjelasan: ${question.explanation}
+                </div><br>
+            `;
+        });
+
+        resultContainer.innerHTML += '<button id="restartButton">Mulai Ulang Kuis</button>';
+        resultContainer.style.display = 'block';
+        document.getElementById('quizContent').style.display = 'none';
+
+        document.getElementById('restartButton').addEventListener('click', restartQuiz);
+    }
+
+    function restartQuiz() {
+        currentQuestionIndex = 0;
+        answers = [];
+        document.getElementById('formContainer').style.display = 'block';
+        document.getElementById('resultContainer').style.display = 'none';
+        document.getElementById('quizContent').style.display = 'none';
+        document.getElementById('name').value = '';
+        document.getElementById('class').value = '';
+    }
+
+    document.getElementById('startButton').addEventListener('click', initQuiz);
+    document.getElementById('nextButton').addEventListener('click', nextQuestion);
+    document.getElementById('prevButton').addEventListener('click', prevQuestion);
+    document.getElementById('submitButton').addEventListener('click', submitQuiz);
+</script>
+
+</body>
+</html>
+
+
+    <footer>
+        <p>© 2024 Materi Bilangan Bulat Kelas 7. Nurul Farasidah.</p>
+    </footer>
+
+    <script>
+        const burger = document.querySelector('.burger');
+        const navLinks = document.querySelector('.nav-links');
+
+        burger.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+            burger.classList.toggle('toggle');
+        });
+    </script>
+</body>
+</html>

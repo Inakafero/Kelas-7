@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bilangan Bulat Kelas 7</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background: linear-gradient(90deg, #ecd76b, #f8d529);
+            padding: 1rem 0;
+            color: white;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 1rem;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+
+        .nav-links {
+            list-style: none;
+            display: flex;
+            gap: 1rem;
+        }
+
+        .nav-links li {
+            position: relative;
+        }
+
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+            font-size: 1rem;
+            transition: color 0.3s;
+        }
+
+        .nav-links a:hover {
+            color: #ffdd57;
+        }
+
+        .burger {
+            display: none;
+            cursor: pointer;
+            flex-direction: column;
+            gap: 0.3rem;
+        }
+
+        .burger div {
+            width: 25px;
+            height: 3px;
+            background: white;
+            transition: all 0.3s;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 2rem auto;
+            padding: 0 1rem;
+        }
+        .box 
+            {
+            border: 1px solid #ccc;
+            padding: 20px;
+            max-width: 800px;
+            margin: 30px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+            }
+
+        .home {
+            text-align: center;
+            padding: 2rem 0;
+        }
+
+        .home h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .home p {
+            font-size: 1.2rem;
+            line-height: 1.6;
+        }
+
+        footer {
+            background:#f8d529;
+            color: hsl(0, 0%, 100%); /* Warna teks putih */
+            text-align: center; /* Teks di tengah */
+            padding: 1rem 0;
+            position: relative;
+            width: 100%;
+            bottom: 0;
+        }
+
+        footer p {
+            margin: 0;
+            letter-spacing: 0.5px;
+            font-weight: 400;
+        }
+        footer {
+            display: flex;
+            color: rgb(255, 255, 255); /* Warna teks putih */
+            justify-content: center;
+            align-items: center;
+        }
+        footer p {
+            color: white !important;
+        }
+
+
+        .background-image {
+            width: 50%;
+            height: auto;
+            margin-top: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        iframe {
+            width: 100%;
+            height: 400px;
+            border: none;
+            margin-top: 10px;
+        }
+        p {
+            margin: 10px 0;
+        }
+
+        @media (max-width: 768px) {
+            .nav-links {
+                display: none;
+                flex-direction: column;
+                background: #ed5f07;
+                position: absolute;
+                top: 60px;
+                right: 0;
+                width: 100%;
+            }
+
+            .nav-links.active {
+                display: flex;
+            }
+
+            .burger {
+                display: flex;
+            }
+
+            .burger.toggle .line1 {
+                transform: rotate(-45deg) translate(-5px, 6px);
+            }
+
+            .burger.toggle .line2 {
+                opacity: 0;
+            }
+
+            .burger.toggle .line3 {
+                transform: rotate(45deg) translate(-5px, -6px);
+            }
+        }
+
+        /* Gaya tambahan untuk bagian materi peluang */
+        .content-container {
+            max-width: 800px;
+            margin: 30px auto;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+        }
+
+        h1, h2 {
+            text-align: center;
+            color:#ed5f07;
+            margin-bottom: 20px;
+        }
+
+        p, ul {
+            margin-bottom: 20px;
+            line-height: 1.6;
+            text-align: justify;
+            color: #333;
+        }
+
+        ul {
+            margin-left: 20px;
+        }
+
+        .formula {
+            background-color: #f4f4f4;
+            padding: 10px;
+            border-radius: 5px;
+            font-weight: bold;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        img {
+            display: block;
+            margin: 0 auto;
+            width: 500px;
+        }
+    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">Bilangan Bulat Kelas 7</div>
+            <ul class="nav-links">
+                <li><a href="home.html"><i class="fas fa-home"></i> Beranda</a></li>
+                <li><a href="materi1.html"><i class="fas fa-book"></i> Materi</a></li>
+                <li><a href="kuis1.html"><i class="fas fa-question-circle"></i> Kuis</a></li>
+                <li><a href="kontak1.html"><i class="fas fa-envelope"></i> Kontak</a></li>
+            </ul>
+            <div class="burger">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Container 1: Pendahuluan -->
+        <div class="content-container">
+            <h1>BILANGAN BULAT POSITIF DAN NEGATIF</h1>
+            <p>Dalam pelajaran Matematika, kamu pasti udah nggak asing lagi dengan istilah bilangan kan? Bilangan adalah suatu konsep matematika yang memberikan nilai jumlah terhadap sesuatu yang dihitung. Hal ini yang membuat bilangan digunakan dalam pengukuran dan pencacahan.Nah, suatu bilangan punya yang namanya simbol atau lambang. Simbol ini, kita sebut sebagai angka.
+            <p>Bilangan itu banyak sekali macamnya. Ada bilangan bulat, rasional, irasional, bulat, pecahan, cacah, asli, dan masih banyak lagi, ya.</p>
+            <p>Nah, di artikel kali ini, akan membahas mengenai bilangan bulat. Seperti apa sih bilangan bulat itu? Bagaimana ya cara membandingkan dan mengurutkan bilangan bulat? Yuk, kita cari tau sama-sama jawabannya lewat artikel ini!</p>
+        </div>
+
+        <!-- Container 2: Pengertian Bilangan Bulat -->
+        <div class="content-container">
+            <h2>Pengertian Bilangan Bulat</h2>
+            <p>Bilangan bulat adalah sistem bilangan yang merupakan himpunan dari semua bilangan bukan pecahan. Bilangan bulat terdiri dari tiga susunan yaitu bilangan bulat positif, angka nol, dan bilangan bulat negatif. Himpunan bilangan bulat dilambangkan dengan simbol Z yang berarti bilangan bulat.</p>
+        </div>
+
+        <!-- Container 3: Jenis Jenis Bilangan Bulat -->
+        <div class="content-container">
+            <h2>Jenis-Jenis Bilangan Bulat</h2><br>
+            <p>Bilangan bulat terdiri dari bilangan positif, nol, dan bilangan bulat negatif. Kita bahas satu persatu yaa.</p>
+            <div class="box">
+                <h4>1. Bilangan Cacah</h4><br>
+                <p>Bilangan cacah adalah himpunan bilangan yang terdiri dari bilangan nol dan bilangan bulat positif. Bilangan cacah juga sering disebut dengan bilangan bulat yang bukan negatif. Jadi, bilangan cacah itu isinya positif semua. Lambang bilangan cacah adalah W yang memiliki kepanjangan Whole Numbers, yang artinya himpunan bilangan cacah.
+                Contoh bilangan cacah, antara lain
+                <strong>0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, …, dst.</strong>.</p>
+            </div>
+            <div class="box">
+                <h4>2. Bilangan Bulat Positif</h4><br>
+                <p>Bilangan bulat positif adalah kumpulan bilangan bulat yang bernilai positif. Bilangan bulat positif pada garis bilangan terletak di sebelah kanan angka nol.
+                <strong>B = {1, 2, 3, ...}</strong>.</p>
+            </div>
+            <div class="box">
+                <h4>3. Nol</h4><br>
+                <p>Bilangan bulat dapat dilakukan berbagai operasi, seperti penjumlahan, pengurangan, 
+                perkalian, dan pembagian. Contohnya, hasil dari penjumlahan -3 dan 5 adalah 2.</p>
+            </div>
+            <div class="box">
+                <h4>4.Bilangan Bulat Negatif</h4><br>
+                <p>Bilangan bulat negative adalah Kumpulan bilangan bulat yang bernilai negative. Pada garis bilangan bilangan bulat terletak di sebelah kiri angka nol.  </p>
+            </div>
+        </div>
+
+        <!-- Container 4: Cara Membandingkan Bilangan Bulat -->
+        <div class="content-container">
+            <h2>Cara Membandingkan Bilangan Bulat</h2><br>
+            <p>Membandingkan bilangan bulat, berarti menentukan apakah suatu bilangan bulat memiliki nilai lebih besar, lebih kecil, atau sama dengan bilangan bulat yang lain. Dalam membandingkan bilangan bulat, kita bisa menuliskannya menggunakan lambang-lambang berikut ini:</p>
+            <p>Misalkan, p dan q merupakan bilangan bulat.</p>
+            <ul>
+                <li>Jika a lebih besar dari b, maka bisa ditulis a > b</li>
+                <li>Jika a lebih kecil dari b, maka bisa ditulis a < b</li>
+                <li>Jika a sama dengan b, maka bisa ditulis a = b</li>
+            </ul>
+            <br><br>
+        </div>
+
+        <!-- Container 5: Cara Mengurutkan Bilangan Bulat -->
+        <div class="content-container">
+            <h2>Cara Mengurutkan Bulat</h2><br>
+            <p>Mengurutkan bilangan bulat, berarti menuliskan bilangan bulat tersebut secara urut dari nilai terkecil ke nilai terbesar atau sebaliknya. Pada garis bilangan, semakin ke kanan letak suatu bilangan, maka nilainya akan semakin besar. Sebaliknya, semakin ke kiri letak suatu bilangan, nilainya akan semakin kecil.</p>
+            <p>Supaya kamu lebih paham yuk cermati gambar berikut ini:</p>
+            <img src="Bilangan.png" alt="Materi Peluang Kelas 8"><br><br>
+            <p>Pada bilangan bulat positif, semakin besar bilangannya, semakin besar juga nilainya. Sementara itu, pada bilangan bulat negatif, semakin besar bilangannya, semakin kecil nilainya.</p>
+            <p>Nah, supaya semakin paham, kamu bisa menonton vidio pembelajaran berikut ini yaa</p>
+        </div>
+
+        <!-- Container 6: Video Pembelajaran -->
+        <div class="content-container">
+            <h2>Video Pembelajaran</h2>
+            <iframe width="100%" height="100%" margin-left="auto" margin-right="auto"src="https://www.youtube.com/embed/cSOyoQ0-pMU?si=otGawH1KpwJNUzPh" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe><br><br><br>
+        </div>
+
+         <!-- Container 7: Animasi Geogebra -->
+         <div class="content-container">
+            <h2>Geogebra</h2>
+            <p>Supaya kamu semakin paham kamu bisa mencermati geogebra di bawah ini yaa</p>
+            <iframe scrolling="no" title="Adding Integers" src="https://www.geogebra.org/material/iframe/id/K8gAFR7Q/width/839/height/362/border/888888/sfsb/true/smb/false/stb/false/stbh/false/ai/false/asb/false/sri/false/rc/false/ld/false/sdz/false/ctl/false" width="100%" height="100%" margin-left="auto" margin-right="auto" text-align="center" style="border:0px;"> </iframe><br><br><br>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Materi Bilangan Bulat Kelas 7. Nurul Farasidah.</p>
+    </footer>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const burger = document.querySelector('.burger');
+            const navLinks = document.querySelector('.nav-links');
+
+            burger.addEventListener('click', () => {
+                navLinks.classList.toggle('active');
+                burger.classList.toggle('toggle');
+            });
+
+            navLinks.addEventListener('click', (event) => {
+                if (event.target.tagName === 'A') {
+                    navLinks.classList.remove('active');
+                    burger.classList.remove('toggle');
+                }
+            });
+        });
+    </script>
+</body>
+</html>
